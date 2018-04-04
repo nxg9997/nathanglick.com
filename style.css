@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 html {
     font-family: 'Oxygen', 'sans-serif';
@@ -17,6 +18,23 @@ html {
 
 .Home h1, .Home h2{
     color: rgba(50, 231, 0, 0.534);
+}
+
+.Home p{
+    color: white;
+}
+
+.home-body p{
+    color: white;
+}
+
+.code-div{
+    float: left;
+    position: absolute;
+    top: 5vh;
+    line-height: .5;
+    font-size: 12px;
+    font-family: 'Inconsolata', monospace;
 }
 
 /*header*/
@@ -429,6 +447,8 @@ i:hover {
     color: rgb(155, 155, 155);
     height: inherit;
 }
+
+
 
 @media screen and (min-width: 600px){
     .a-icons i {
