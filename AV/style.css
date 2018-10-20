@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+canvas{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin:0;
+}
+
+#controls{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    padding: 5px;
+}
+
+audio {
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform: translate(-50%,0);
+}
+
+.main-controls {
+    display: flex;
+    flex-direction: column;
+    background: rgba(94, 94, 94, 0.555);
+    border-radius: 10px;
+}
+
+label, input {
+    color: rgb(204, 204, 204);
+    
+}
+
+.main-controls div{
+    padding: 2.5px;
+}
+
+html {
+    overflow: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 2.5px;
+}
