@@ -56,6 +56,17 @@
         <h1 class="name-H"></h1>
         <h2 class="des-H"></h2>
     </div>
+
+    <canvas height='100%' width="100%">
+        this browser doesn't support canvas :(
+    </canvas>
 </body>
-<script src="type.js"></script>
+<script src="./js/victor-1.1.0/build/victor.js"></script>
+<!--script src="type.js"></script-->
+<script type="module">
+    import {init} from "./indexCanvas.js";
+    import {typeCode,checkDone} from "./type.js";
+    typeCode();
+    //init();
+</script>
 </html>

@@ -6,7 +6,7 @@ let gpDiv = document.querySelector("#g-projects");
 let gcTri = document.querySelector("#g-classwork-tri");
 let gcDiv = document.querySelector("#g-classwork");
 
-CheckLists();
+//CheckLists();
 Initialize();
 
 
@@ -34,7 +34,7 @@ function Initialize(){
 }
 
 function OpenDetails(e){
-    console.log(e);
+    //console.log(e);
     /*for (let x = 0; x < e.path.length; x ++)
     {
         if (e.path[x].className == 'g-entry')
