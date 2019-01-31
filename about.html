@@ -4,67 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-teal.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Nathan Glick - About</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Document</title>
 </head>
 <body>
-    <header>
-            <!--p>About Gallery Contact Resume</p-->
-            <div class="page_links">
-                <table id="full_nav">
-                    <tr>
-                        <th><a href="./index.html">Home</a></th>
-                        <th><a href="./about.html">About</a></th>
-                        <th><a href="./gallery.html">Gallery</a></th>
-                        <th><a href="./Glick_Resume.pdf">Resume</a></th>
-                    </tr>
-                </table>
-    
+    <div class="mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header">
+              <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <div class="mdl-layout-spacer"></div>
                 
+                <span class="mdl-layout-title">About</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+              </div>
+            </header>
+            <div class="mdl-layout__drawer">
+              <span class="mdl-layout-title">Nathan Glick</span>
+              <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="./index.html">Home</a>
+                <a class="mdl-navigation__link" href="./about.html">About</a>
+                <a class="mdl-navigation__link" href="./gallery.html">Gallery</a>
+                <a class="mdl-navigation__link" href="./res/Glick_Resume.pdf">Resume</a>
+              </nav>
             </div>
-        </header>
-    <nav id="mobile_nav">
-        <div id="toggle">
-            <div class="heading"><h2>About</h2></div>
-
-            <input type="checkbox">
-
-            <span></span>
-            <span></span>
-            <span></span>
-
-            
-
-            <ul id="menu">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="./Glick_Resume.pdf">Resume</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="a-info">
-        <div id="g-nate"><img src="./NateGlick.jpg" alt="NateGlick"/></div>
-        <div><h2>Nathan Glick</h2></div>
-        <p>Hi! I'm Nate, a current Game Design & Development student at RIT! I am mostly a programmer, but I like to work on the design for a lot of my projects as well. I am well versed in languages such as: C#, Java, HTML/CSS, and a little bit of Python. As for software, I have lots of experience in Unity3D, Autodesk Maya, Autodesk Inventor, Adobe Photoshop, Adobe After Effects, Vegas Pro, Visual Studio, and Eclipse, among others. I am also studying Japanese, and I am the Rocket League team manager for RIT Esports!</p>
-        <div class="Contact">
-            <h2>Contact</h2>
-            <div class="a-icons">
-                <i class="fa fa-phone"></i>
-                <i class="fa fa-envelope-o"></i>
-                <a href="http://twitter.com/NateGlick"><i class="fa fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/nathan-glick/"><i class="fa fa-linkedin"></i></a>
-            </div>
-            <div class="a-icon-info">
-                
-            </div>
-            
-        </div>
-    </div>
-
-    <script src="icon.js"></script>
+            <main class="mdl-layout__content" id="app">
+                <div id="about-content">
+                    <div id="about-div-img">
+                        <img src="./natewagyu.png" class="mdl-shadow--2dp"/>
+                            
+                    </div>
+                    <div id="about-des" class="mdl-card-wide mdl-card mdl-shadow--2dp">
+                        <div>
+                            <h4>Nathan Glick</h4>
+                            <h5>Major: Game Design & Development</h5>
+                            <h5>Rochester Institute of Technology</h5>
+                            <p>
+                                I'm Nate, a current Game Design & Development student at RIT! I am mostly a programmer, but I like to work on the design for a lot of my projects as well. I am well versed in languages such as: C/C++, C#, Java, HTML/CSS, JavaScript, and a little bit of Python. As for software, I have lots of experience in Unity3D, Autodesk Maya, Autodesk Inventor, Adobe Photoshop, Adobe After Effects, Vegas Pro, Visual Studio, and Eclipse, among others. I am also studying Japanese, and I am the Rocket League team manager for RIT Esports!
+                            </p>
+                        </div>
+                        <div id="about-socials">
+                            <a v-bind:href="phone"><i class="fa fa-phone"></i></a>
+                            <a v-bind:href="email"><i class="fa fa-envelope-o"></i></a>
+                            <a href="http://twitter.com/NateGlick"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/nathan-glick/"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+          </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script type="module">
+    import {init} from "./init.js";
+    import {initVM} from "./js/aboutViewModel.js";
+    initVM();
+    //init();
+</script>
 </html>
-
