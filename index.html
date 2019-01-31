@@ -4,70 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-teal.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Nathan Glick - Portfolio</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Document</title>
 </head>
-<body class="home-body">
-    <header>
-        <!--p>About Gallery Contact Resume</p-->
-        <div class="page_links">
-            <table id="full_nav">
-                <tr>
-                    <th><a href="./index.html">Home</a></th>
-                    <th><a href="./about.html">About</a></th>
-                    <th><a href="./gallery.html">Gallery</a></th>
-                    <th><a href="./Glick_Resume.pdf">Resume</a></th>
-                </tr>
-            </table>
-
-            
+<body>
+    <div class="mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+            <div class="mdl-layout-spacer"></div>
+            <span class="mdl-layout-title">Home</span>
+            <div class="mdl-layout-spacer"></div>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Nathan Glick</span>
+            <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="./index.html">Home</a>
+            <a class="mdl-navigation__link" href="./about.html">About</a>
+            <a class="mdl-navigation__link" href="./gallery.html">Gallery</a>
+            <a class="mdl-navigation__link" href="./res/Glick_Resume.pdf">Resume</a>
+            </nav>
         </div>
-    </header>
-    <nav id="mobile_nav">
-        <div id="toggle">
-            <div class="heading"><h2>Home</h2></div>
+        <main class="mdl-layout__content" id="home-name">
+            <div id="home-content">
+                <img src="pixel_nate_nobg.png"/>
+                <div id="home-nm">
+                    <h1 id="home-fn">Nathan Glick</h1>
+                    <h3 id="home-tag">Game & Software Developer</h3>
+                </div>
+            </div>
             
-            <input type="checkbox">
-
-            <span></span>
-            <span></span>
-            <span></span>
-
-            
-
-            <ul id="menu">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="./Glick_Resume.pdf">Resume</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="code-div">
-        <p class="code"></p>
-        <p class="code"></p>
-        <p class="code"></p>
-        <p class="code"></p>
-        <p class="code"></p>
+        </main>
     </div>
-
-    <div class="Home">
-        <h1 class="name-H"></h1>
-        <h2 class="des-H"></h2>
-    </div>
-
-    <canvas height='100%' width="100%">
-        this browser doesn't support canvas :(
+    <canvas height="100%" width="100%">
+        
     </canvas>
 </body>
+<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 <script src="./js/victor-1.1.0/build/victor.js"></script>
-<!--script src="type.js"></script-->
 <script type="module">
-    "use strict";
-    import {init} from "./indexCanvas.js";
-    import {typeCode,checkDone} from "./type.js";
-    typeCode();
-    //init();
+    import {init} from "./init.js";
+    console.log("hi");
+    init();
 </script>
 </html>
