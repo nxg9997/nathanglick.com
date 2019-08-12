@@ -21,6 +21,7 @@ function genCards(){
     projects.push(new project("Humans vs Zombies", "Simulation", "Developer", "./img/hvz.PNG", [new link("GitHub", "https://github.com/nxg9997/HvZ-igme202")], "This is a project created in Unity to demo basic AI behaviours in a 3D environment. The game includes controls that allows you to control various parts of the game, including how many humans and zombies exist in the environment."));
     projects.push(new project("Audio Visualizer", "Simulation", "Developer", "./img/AVlogo.png", [new link("Website", "./AV/visualizer.html")], "This is a web-based audio visualizer built using JS and the Web Audio API"));
     projects.push(new project("JS Quadtree", "Simulation", "Developer", "./img/quad_thumb.jpg", [new link("Website", "https://people.rit.edu/~nxg9997/fun/")], "This is a simulation where you can click to destroy sections of the page. It uses a quadtree to determine solids. In addition, basic particle physics are utilized to make small explosions where the mouse is clicked."));
+    projects.push(new project("Rocket League Tracker", "Rich Web App", "Developer", "./img/rit_rl_logo.png", [new link("Website", "https://ritcarball.herokuapp.com"), new link("GitHub","https://github.com/nxg9997/CustomRLTracker")], "This is a web application that is used to track the RIT Esports Rocket League players. It utilizes a Node.js backend as well as a MySQL database to store player data."));
 }//https://people.rit.edu/~nxg9997/fun/
 
 class project{
