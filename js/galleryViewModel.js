@@ -13,6 +13,7 @@ export function initVM(){
 }
 
 function genCards(){
+    projects.push(new project("X-Iled", "Rogue-like", "Developer", "./img/capstone.png", [new link("Website", "https://dndcapstone.github.io/")], "Rogue-like deckbuilder built in UE4. Still in development!"));
     projects.push(new project("Hatmancers", "3D Shooter", "Developer", "./img/hat_thumb.jpg", [new link("GitHub", "https://github.com/nxg9997/Nightcap-Studios-IGME601")], "3D arena wizard dueling game developed in Unity. Pick up hats to gain new magic powers to defeat your opponents."));
     projects.push(new project("Rocket League Tracker", "Rich Web App", "Developer", "./img/rit_rl_logo.png", [new link("Website", "https://ritcarball.herokuapp.com"), new link("GitHub","https://github.com/nxg9997/CustomRLTracker")], "This is a web application that is used to track the RIT Esports Rocket League players. It utilizes a Node.js backend as well as a MySQL database to store player data."));
     //projects.push(new project("Earth RPG","2D RPG", "Developer", "./img/earthrpglogo.png", [new link("Website", "https://razeki.itch.io/earthrpg")], "EarthRPG is a RPG similar to EarthBound created in Unity. Currently just a proof of concept, but may be developed into a full game at some point."));
