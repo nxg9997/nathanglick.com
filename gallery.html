@@ -38,22 +38,58 @@
             </nav>
         </div>
         <main class="mdl-layout__content" id="gallery-main">
-            <div id="gallery-content">
-                <div class="gallery-card mdl-card-wide mdl-card mdl-shadow--2dp" v-for="project in galleryCards">
-                    <div class="gallery-card-content">
-                        <div class="gallery-card-img">
-                            <img v-bind:src="project.img"/>
+            <div id="gallery-content mdl-grid">
+                <div class="mdl-cell--12-col mdl-grid">
+                    <div class="mdl-cell--12-col mdl-card mdl-shadow--2dp" id="gallery-pro">
+                        <div class="mdl-card__title mdl-card--expand">
+                            <h2>Professional Work</h2>
                         </div>
-                        <div class="gallery-card-des">
-                            <h4>{{project.title}}</h4>
-                            <h5>{{project.genre}}</h5>
-                            <h6>{{project.role}}</h6>
-                            <p>{{project.description}}</p>
+                    </div>
+                    <div class="mdl-cell--12-col mdl-grid">
+                        <div class="gallery-card mdl-card-wide mdl-card mdl-shadow--2dp" v-for="project in galleryPro">
+                            <div class="gallery-card-content">
+                                <div class="gallery-card-img">
+                                    <img v-bind:src="project.img"/>
+                                </div>
+                                <div class="gallery-card-des">
+                                    <h4>{{project.title}}</h4>
+                                    <h5>{{project.genre}}</h5>
+                                    <h6>{{project.role}}</h6>
+                                    <p>{{project.description}}</p>
+                                </div>
+                                <div class="gallery-card-btns">
+                                    <a v-for="l in project.link" v-bind:href="l.url">
+                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" >{{l.name}}</button>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="gallery-card-btns">
-                            <a v-for="l in project.link" v-bind:href="l.url">
-                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" >{{l.name}}</button>
-                            </a>
+                    </div>
+                </div>
+                <div class="mdl-cell--12-col mdl-grid">
+                    <div class="mdl-cell--12-col mdl-card mdl-shadow--2dp" id="gallery-student">
+                        <div class="mdl-card__title mdl-card--expand">
+                            <h2>Student Work</h2>
+                        </div>
+                    </div>
+                    <div class="mdl-cell--12-col mdl-grid">
+                        <div class="gallery-card mdl-card-wide mdl-card mdl-shadow--2dp" v-for="project in galleryCards">
+                            <div class="gallery-card-content">
+                                <div class="gallery-card-img">
+                                    <img v-bind:src="project.img"/>
+                                </div>
+                                <div class="gallery-card-des">
+                                    <h4>{{project.title}}</h4>
+                                    <h5>{{project.genre}}</h5>
+                                    <h6>{{project.role}}</h6>
+                                    <p>{{project.description}}</p>
+                                </div>
+                                <div class="gallery-card-btns">
+                                    <a v-for="l in project.link" v-bind:href="l.url">
+                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" >{{l.name}}</button>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

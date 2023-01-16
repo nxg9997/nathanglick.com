@@ -1,6 +1,7 @@
 import {bgInit,drawBg} from "./js/starfield.js";
 
 export function init(){
+    return;
     console.log("working");
     let canvas = document.querySelector('canvas');
     let ctx = canvas.getContext('2d');

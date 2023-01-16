@@ -1,4 +1,4 @@
-import {drawRect,drawCircle,drawTri,mapVal} from './utilities.js';
+import {drawRect,drawCircle,drawLine,drawTri,mapVal} from './utilities.js';
 
 "use strict";
 let canvas;
@@ -25,7 +25,7 @@ export function drawBg(){
 //create star objects
 function genStars(){
     for(let i = 0; i < 50; i++){
-        stars.push(new Star(ctx,'rgb(100,100,50)',i+1 / 50,10*i,new Victor(0, 0)));
+        stars.push(new Star(ctx,'rgb(100,100,50)',(Math.random() * 10) + 10,Math.random() * 360,new Victor(0, 0)));
     }
     console.log(stars);
 }
@@ -66,7 +66,8 @@ class Star{
         //console.log(this.ctx.globalAlpha);
         this.pos.x+=this.scale*this.speed;
         //this.pos.y+=this.scale*this.speed;
-        drawCircle(this.ctx,this.pos.x,this.pos.y,this.size*Math.pow(this.scale,this.speed/2),this.color,'rgba(0,0,0,0)');
+        drawLine(this.ctx, this.pos.x, this.pos.y, this.pos.x * this.speed / 4, this.pos.y * this.speed / 4, 'black');
+        //drawCircle(this.ctx,this.pos.x,this.pos.y,this.size*Math.pow(this.scale,this.speed/2),this.color,'rgba(0,0,0,0)');
         this.ctx.restore();
         this.scale+=0.01;
         this.frameCount++;

@@ -19,6 +19,16 @@ export function drawCircle(ctx,x=10,y=10,radius=5,color='red',stroke='red'){
     ctx.stroke();
 }
 
+export function drawLine(ctx,x1=10,y1=10,x2=20,y2=20, color='red')
+{
+    ctx.strokeStyle = color;
+    ctx.beginPath();
+    ctx.moveTo(x1,y1);
+    ctx.lineTo(x2,y2);
+    ctx.closePath();
+    ctx.stroke();
+}
+
 //draws basic triangles
 export function drawTri(ctx,x=10,y=10,scaleX=1,scaleY=1,color='red',stroke='red'){
     ctx.fillStyle = color;
