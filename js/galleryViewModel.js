@@ -27,7 +27,7 @@ function genCards(){
     //projects.push(new project("Humans vs Zombies", "Simulation", "Developer", "./img/hvz.PNG", [new link("GitHub", "https://github.com/nxg9997/HvZ-igme202")], "This is a project created in Unity to demo basic AI behaviours in a 3D environment. The game includes controls that allows you to control various parts of the game, including how many humans and zombies exist in the environment."));
     projects.push(new project("Audio Visualizer", "Simulation", "Developer", "./img/AVlogo.png", [new link("Website", "./AV/visualizer.html")], "This is a web-based audio visualizer built using JS and the Web Audio API"));
 
-    proProjects.push(new project("SMITE", "MOBA", "Associate Gameplay Programmer", "https://www.psu.com/wp/wp-content/uploads/2017/03/smite-1.jpg", [new link("Official Website", "https://smitegame.com/")], "Worked as a Gameplay Programmer for SMITE. Mostly responsible for new God/Character implementation, as well as some gamemode and item development."));
+    proProjects.push(new project("SMITE", "MOBA", "Gameplay Programmer", "https://www.psu.com/wp/wp-content/uploads/2017/03/smite-1.jpg", [new link("Official Website", "https://smitegame.com/")], "Worked as a Gameplay Programmer for SMITE. Responsible for new God/Character implementation, Game Modes, Items, Backend Server development, and much more! Closely worked with Design and other departments to deliver high-quality releases. Notable features I worked on: Atlas, Lancelot, Martichoras, Charon, Bake Kujira, Bastet (Rework) | Runescape Event | Conquest | April Fools Secret Event | SMITE 2: Thanatos, Amaterasu"));
 }
 
 class project{
