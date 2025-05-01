@@ -1,0 +1,9 @@
+- name: SMITE (Hi-Rez Studios)
+  image: "assets/images/s_charon.jpg"
+  link: https://www.smitegame.com/home/
+  description: "Gameplay Programmer<br>06/2021 - 10/2024<br>Atlas, Lancelot, Martichoras, Charon, Bake-Kujira"
+
+- name: SMITE 2 (Hi-Rez Studios)
+  link: https://www.smite2.com/
+  image: "assets/images/s2.jpeg"
+  description: "Gameplay Programmer<br>06/2021 - 10/2024<br>Thanatos, Amaterasu, Miscellaneous Support"

@@ -1,0 +1,34 @@
+- name: X-Iled
+  image: "assets/images/xiled_itch_cover.png"
+  link: https://razeki.itch.io/x-iled
+  description: "Graduate Capstone Project<br>- Rogue-like Action-Adventure<br>- Built in Unreal Engine 4"
+
+- name: Hatmancers
+  link: https://github.com/nxg9997/Nightcap-Studios-IGME601
+  image: "assets/images/hat_thumb.jpg"
+  description: "Graduate Class Project<br>- Multiplayer Arena Shooter<br>- Built in Unity"
+
+- name: No One Left Behind
+  link: https://razeki.itch.io/no-one-left-behind
+  image: "assets/images/NOLB.png"
+  description: "Study Abroad Game Jam<br>- Survival Game<br>- Built in Unity"
+
+- name: JS Quadtree Fun
+  link: "oldsite/QuadJS/index.html"
+  image: "assets/images/quad_thumb.jpg"
+  description: "Personal Web Project<br>- Showcase of Quadtree Data Structure<br>- Custom built in JS"
+
+- name: E.C.H.O.
+  link: https://razeki.itch.io/echo
+  image: "assets/images/echo_thumb.jpg"
+  description: "UGrad Game Jam<br>- Puzzle Adventure<br>- Built in Unity"
+
+- name: Audio Visualizer
+  link: "oldsite/AV/visualizer.html"
+  image: "assets/images/AVlogo.png"
+  description: "UGrad Class Project<br>- Audio Visualization<br>- Custom built in JS"
+
+- name: Detached
+  link:
+  image: "assets/images/detached_thumb.jpg"
+  description: "UGrad Class Project<br>- Platformer<br>- Built in Monogame/C#"

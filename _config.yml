@@ -1,0 +1,99 @@
+# WhatATheme
+markdown: kramdown
+
+# URL of the Site
+url: 'http://www.nathanglick.com'
+# Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
+baseurl: 
+
+# Title of the Site
+title: Nathan Glick
+# Description of the Site
+description: Gameplay Programmer / Software Engineer
+# URL of Image of the Site
+site-image: /WhatATheme/assets/images/meta.jpg
+# Keywords of the Site
+site-keywords: #Site, Template, Theme
+# URL for the Image of custom Favicon
+favicon-url: "assets/images/pixel_nate.png"
+
+# URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
+heroimage: "../images/stream_bg_raw.png"
+
+# Social Media and Contact
+# If you don't want to use any icon, you can leave them blank.
+email: nathan.h.glick@gmail.com
+facebook_username: 
+twitter_username: razeki_
+instagram_username: 
+linkedin_username: nathan-glick
+github_username: nxg9997
+youtube_channel_id: 
+reddit_username: 
+behance_username: 
+dribbble_username: 
+spotify_username: 
+
+# Google Analytics
+google-analytics: 
+
+# Disqus
+disqus-shortname: 
+
+# Name of the Author
+author-name: Nathan Glick
+# URL for the Image of the Author
+author-image: "assets/images/nate.jpg"
+# 60 Words About the Author
+author-about: Hi, I'm Nate! I am a Gameplay Programmer with nearly 4 years of industry experience working on SMITE 1 and 2 at Hi-Rez Studios. Currently I'm looking for new opportunities. Outside of work you'll find me playing games (right now Destiny and Risk of Rain are my go-to's!), or you might find me on the mats training in BJJ on week nights. Feel free to reach out if you want to connect; links to where to contact me are below, and my resume is hiding over in the hamburger menu on the left!
+# URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
+author-url: https://github.com/nxg9997
+
+resume-url: "assets/other/Glick_Resume.pdf"
+
+# SASS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Build settings
+plugins:
+  - jekyll-admin
+  - jekyll-feed
+
+# Permalink
+permalink: "blog/:title"
+
+# Compress
+compress_html:
+  clippings: all
+
+# Defaults
+defaults:
+  -
+    scope:
+      type: 'posts'
+    values:
+      layout: post
+      post-image: ""
+      description: ""
+      tags:
+        - ""
+  -
+    scope:
+      type: 'pages'
+    values:
+      layout: page
+
+# Exclude
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

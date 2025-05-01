@@ -1,0 +1,64 @@
+
+<div class="container has-text-centered">
+  <h1 class="title has-text-grey is-size-4">Professional</h1>
+</div>
+<hr>
+<div class="columns is-centered is-multiline is-mobile">
+  {% for project in site.data.projects_professional %}
+    <div class="column has-text-centered is-paddingless is-marginless is-one-third-widescreen is-one-third-desktop is-one-fifth-fullhd is-one-third-tablet is-two-fifths-mobile is-three-quarters-touch has-background-black"
+      id="project-card">
+      <a href="{{project.link}}" target="_blank">
+      <div class="has-background-black card">
+        <figure class="image is-4by3" style="background-image: url({{project.image}});">
+        </figure>
+        <div class="card-content">
+          <h1 class="title has-text-white is-size-4">{{ project.name }}</h1>
+          <p class="has-text-white has-text-weight-light content">{{ project.description | truncate: 100}}</p>
+        </div>
+      </div>
+      </a>
+    </div>
+  {% endfor %}
+</div>
+<div class="container has-text-centered">
+  <h1 class="title has-text-grey is-size-4">Personal</h1>
+</div>
+<hr>
+<div class="columns is-centered is-multiline is-mobile">
+  {% for project in site.data.projects_personal %}
+    <div class="column has-text-centered is-paddingless is-marginless is-one-third-widescreen is-one-third-desktop is-one-fifth-fullhd is-one-third-tablet is-two-fifths-mobile is-three-quarters-touch has-background-black"
+      id="project-card">
+      <a href="{{project.link}}" target="_blank">
+      <div class="has-background-black card">
+        <figure class="image is-4by3" style="background-image: url({{project.image}});">
+        </figure>
+        <div class="card-content">
+          <h1 class="title has-text-white is-size-4">{{ project.name }}</h1>
+          <p class="has-text-white has-text-weight-light content">{{ project.description | truncate: 100}}</p>
+        </div>
+      </div>
+      </a>
+    </div>
+  {% endfor %}
+</div>
+<div class="container has-text-centered">
+  <h1 class="title has-text-grey is-size-4">Student</h1>
+</div>
+<hr>
+<div class="columns is-centered is-multiline is-mobile">
+  {% for project in site.data.projects_student %}
+    <div class="column has-text-centered is-paddingless is-marginless is-one-third-widescreen is-one-third-desktop is-one-fifth-fullhd is-one-third-tablet is-two-fifths-mobile is-three-quarters-touch has-background-black"
+      id="project-card">
+      <a href="{{project.link}}" target="_blank">
+      <div class="has-background-black card">
+        <figure class="image is-4by3" style="background-image: url({{project.image}});">
+        </figure>
+        <div class="card-content">
+          <h1 class="title has-text-white is-size-4">{{ project.name }}</h1>
+          <p class="has-text-white has-text-weight-light content">{{ project.description | truncate: 100}}</p>
+        </div>
+      </div>
+      </a>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,19 @@
+- name: RogueMan Custom Engine
+  image: "assets/images/rogueman_engine.png"
+  link:
+  description: "- Built with C++ and SFML/OpenGL<br>- Custom Entity Component System<br>- Custom Scripting System"
+
+- name: Unnamed RPG
+  image: "assets/images/rogueman_rpg.png"
+  link:
+  description: "- RPG Prototype<br>- Built in the RogueMan Engine<br>- Currently in Development"
+
+- name: Unnamed First Person Shooter
+  image: "assets/images/godot_fps.png"
+  link:
+  description: "- FPS Prototype<br>- Built using the Godot Engine<br>- Currently in Development"
+
+- name: Scoundrel
+  image: https://thesoloboardgamer.com/wp-content/uploads/scoundrel-bannerimg.jpg
+  link:
+  description: "- A recreation of Scoundrel<br>- Built in the RogueMan Engine<br>- Planned to be a Rogue-like"
